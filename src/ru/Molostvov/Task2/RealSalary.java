@@ -12,9 +12,9 @@ public class RealSalary {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите вашу зарплату: ");
         salary = scanner.nextInt();
-        tax = salary*13/100;
-        realSalary = salary-tax;
+        tax = salary * 13 / 100;
+        realSalary = salary - tax;
 
-        System.out.println("После вычета налога вы получите: " + realSalary);
+        System.out.println("После вычета налога вы получите: " + realSalary + " руб");
     }
 }

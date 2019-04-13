@@ -11,8 +11,8 @@ public class Fuel {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество топлива: ");
         liters = scanner.nextInt();
-        int forPayment = fuelCost*liters;
+        int forPayment = fuelCost * liters;
 
-        System.out.println("К оплате: " + forPayment);
+        System.out.println("К оплате: " + forPayment + " руб");
     }
 }

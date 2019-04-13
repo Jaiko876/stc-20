@@ -11,7 +11,7 @@ public class TimeConverter {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество секунд для конвертации в часы: ");
         seconds = scanner.nextInt();
-        convertedToHours = seconds/3600;
+        convertedToHours = seconds / 3600;
 
         System.out.println(seconds + " в часах = " + convertedToHours);
     }
