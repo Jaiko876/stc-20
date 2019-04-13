@@ -1,4 +1,4 @@
-package ru.Molostvov.Task2;
+package ru.molostvov.task2;
 
 import java.util.Scanner;
 

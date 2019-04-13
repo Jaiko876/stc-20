@@ -1,4 +1,4 @@
-package ru.Molostvov.Task1;
+package ru.molostvov.task1;
 
 public class RealSalary {
 
