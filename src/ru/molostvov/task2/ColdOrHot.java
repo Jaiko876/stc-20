@@ -3,6 +3,7 @@ package ru.molostvov.task2;
 import java.util.Scanner;
 
 public class ColdOrHot {
+
     public static void main(String[] args) {
         int a = 1; // Начальное значение диапозона
         int b = 100; // Конечное значение диапозона
@@ -45,7 +46,7 @@ public class ColdOrHot {
                 } else {
                     thisAttempt = randomNumber - enteredNumber;
                 }
-                
+
                 if (prevAttempt >= thisAttempt) {
                     System.out.println("Горячо!");
                 } else {
