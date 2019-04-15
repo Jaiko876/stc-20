@@ -63,5 +63,6 @@ public class Progressions {
                 System.out.println("Введено не верное значение");
                 break;
         }
+        scanner1.close();
     }
 }
