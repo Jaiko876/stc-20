@@ -1,8 +1,8 @@
 package ru.molostvov.task7;
 
 abstract class Human implements Run, Swim{
-    public void run(){}
-    public void swim(){}
+    public abstract void run();
+    public abstract void swim();
 }
 
 class Ivan extends Human {
