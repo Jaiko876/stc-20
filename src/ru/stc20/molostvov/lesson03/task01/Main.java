@@ -13,6 +13,7 @@ public class Main {
         mb.print();
         System.out.println(mb.equals(mb2));
         System.out.println(mb.hashCode());
+        System.out.println(mb.hashCode());
         System.out.println(mb2.hashCode());
 
         ObjectBox ob = new ObjectBox();

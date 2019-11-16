@@ -9,6 +9,7 @@ import java.util.*;
 
 public class MathBox <T extends Number> extends ObjectBox{
     private Set<T> treeSet;
+    private final UUID uuid = UUID.randomUUID();
 
     /**
      * Конструктор класса
@@ -52,21 +53,7 @@ public class MathBox <T extends Number> extends ObjectBox{
      * @return возвращает число типа T
      */
     private T split (T first, double d) {
-        if (first instanceof Byte) {
-            return (T) new Byte((byte) (first.byteValue()/d));
-        } else if (first instanceof Short) {
-            return (T) new Short((short)(first.shortValue()/d));
-        } else if (first instanceof Integer ) {
-           return (T) new Integer((int) (first.intValue()/d));
-        } else if (first instanceof Long) {
-           return (T) new Long ((long) (first.longValue()/d));
-        } else if (first instanceof Float) {
-           return (T) new Float(first.floatValue()/d);
-        } else if (first instanceof Double) {
-           return (T) new Double(first.doubleValue()/d);
-        } else {
-            return null;
-        }
+        return (T) new Double(first.doubleValue()/d);
     }
 
     /**
@@ -85,13 +72,17 @@ public class MathBox <T extends Number> extends ObjectBox{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         MathBox<?> mathBox = (MathBox<?>) o;
-        return Objects.equals(treeSet, mathBox.treeSet);
+
+        if (treeSet != null ? !treeSet.equals(mathBox.treeSet) : mathBox.treeSet != null) return false;
+        return uuid.equals(mathBox.uuid);
+
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(treeSet);
+        return uuid.hashCode();
     }
 
     @Override
