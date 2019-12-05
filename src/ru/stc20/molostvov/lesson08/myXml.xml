@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Object name="ru.stc20.molostvov.lesson08.Person">
+<name type="java.lang.String">Vasya</name>
+<age type="int">20</age>
+<position type="java.lang.String">Москва</position>
+</Object>
