@@ -1,6 +1,6 @@
 package ru.stc20.molostvov.lesson15.dao;
 
-import ru.stc20.molostvov.lesson15.dto.User;
+import ru.stc20.molostvov.lesson15.entity.User;
 
 public interface UserDao {
     void addNewUser(User user);

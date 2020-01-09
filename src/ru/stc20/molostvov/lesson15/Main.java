@@ -3,7 +3,7 @@ package ru.stc20.molostvov.lesson15;
 import ru.stc20.molostvov.lesson15.dao.CreateTableDao;
 import ru.stc20.molostvov.lesson15.daoImpl.CreateTableDaoImpl;
 import ru.stc20.molostvov.lesson15.daoImpl.UserDaoImpl;
-import ru.stc20.molostvov.lesson15.dto.User;
+import ru.stc20.molostvov.lesson15.entity.User;
 
 public class Main {
     public static void main(String[] args) {

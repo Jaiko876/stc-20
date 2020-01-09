@@ -4,8 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.stc20.molostvov.lesson15.connectionManagerJDBCImpl.ConnectionManagerJDBCImp;
 import ru.stc20.molostvov.lesson15.dao.RoleDao;
-import ru.stc20.molostvov.lesson15.dto.Role;
-import ru.stc20.molostvov.lesson15.dto.User;
+import ru.stc20.molostvov.lesson15.entity.Role;
+import ru.stc20.molostvov.lesson15.entity.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

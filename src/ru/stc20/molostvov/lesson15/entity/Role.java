@@ -1,4 +1,4 @@
-package ru.stc20.molostvov.lesson15.dto;
+package ru.stc20.molostvov.lesson15.entity;
 
 public class Role {
     private int id;
