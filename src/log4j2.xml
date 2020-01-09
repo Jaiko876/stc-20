@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" name="baeldung" packages="">
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p %m%n"/>
+        </Console>
+        <JDBC name="db" tableName="lesson15.logs">
+            <DriverManager connectionString="jdbc:postgresql://localhost:5432/postgres"
+                           driverClassName="org.postgresql.Driver"
+                           username="postgres"
+                           password="1234"/>
+            <Column name="LOG_ID" pattern="%u" isUnicode="false"/>
+            <Column name="DATE" isEventTimestamp="true" isUnicode="false"/>
+            <Column name="LOG_LEVEL" pattern="%level" isUnicode="false"/>
+            <Column name="MESSAGE" pattern="%m" isUnicode="false"/>
+            <Column name="EXCEPTION" pattern="%throwable" isUnicode="false"/>
+        </JDBC>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="STDOUT" level="DEBUG"/>
+            <AppenderRef ref="db" level="DEBUG"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
